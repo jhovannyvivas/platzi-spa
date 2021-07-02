@@ -24,6 +24,7 @@ body {
   grid-template-columns: minmax(auto, 976px);
   display: grid;
   justify-content: center;
+  background-color: aqua;
 }
 
 .Characters {
