@@ -12,6 +12,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .Header a {
@@ -19,12 +21,16 @@ body {
   color: #15302C;
 }
 
+.about {
+  margin-bottom: 30px;
+}
+
 .Main {
   padding: 10px;
   grid-template-columns: minmax(auto, 976px);
   display: grid;
   justify-content: center;
-  background-color: aqua;
+  background: radial-gradient(rgb(88, 59, 5),rgb(90, 90, 0), rgb(46, 43, 43));
 }
 
 .Characters {
@@ -33,6 +39,7 @@ body {
   grid-row-gap: 1.5em;
   display: grid;
 }
+
 
 .Characters-inner {
   grid-template-columns: 1fr 2fr;
@@ -49,12 +56,15 @@ body {
   display: block;
   animation-duration: 2s;
   animation-name: fade;
+  background: radial-gradient(rgb(16, 248, 16), rgb(255, 255, 7), rgb(7, 202, 7));
+
 }
 
 .Characters-card img {
   width: 100%;
   height: auto;
   border-radius: 5px 5px 0 0;
+
 }
 
 .Characters-card h2 {
@@ -77,13 +87,34 @@ body {
   margin: 0 0 20px 0;
   display: block;
   animation-duration: 2s;
-  animation-name: fade;
+  animation-name: face;
+  background: radial-gradient(rgb(117, 214, 117), yellow, rgb(103, 175, 103));
+  transition: background-color .5s;
 }
+
+.Characters-item:hover {
+  background-color: turquoise;
+  shape-outside: circle(50px);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 35px 21px rgba(7,255,3,0.96);
+
+}
+
+.Characters-item h2:hover {
+  font-weight: bolder;
+}
+
+.Characters-item img:hover{
+  border-radius: 200px;
+
+}
+
 
 .Characters-item img {
   width: 100%;
   height: auto;
-  border-radius: 5px 5px 0 0;
+
 }
 
 .Characters-item h2 {
@@ -91,7 +122,8 @@ body {
   font-weight: 300;
   padding: 5px 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  font-family: fantasy;
 }
 
 .Characters-item a {
