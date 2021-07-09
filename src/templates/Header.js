@@ -4,7 +4,7 @@ const Header = () => {
             <div class="Header-logo">
                 <h1>
                     <a href="/">
-                    100tifi.co 
+                    Adelanto de la pagina. integracion 
                     </a>
                 </h1>
             
